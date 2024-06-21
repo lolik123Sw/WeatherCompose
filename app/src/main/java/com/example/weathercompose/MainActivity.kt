@@ -54,7 +54,7 @@ class MainActivity : ComponentActivity() {
                         getData(it, this, daysList, currentDay)
                     })
                 }
-                getData("London", this, daysList, currentDay)
+                getData("Moscow", this, daysList, currentDay)
                 Image(painter = painterResource(id = R.drawable.img_2),
                     contentDescription = "img_2",
                     modifier = Modifier
@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
                 )
                 Column {
                     MainCard(currentDay, onClickSync = {
-                        getData("London", this@MainActivity, daysList, currentDay)
+                        getData("Moscow", this@MainActivity, daysList, currentDay)
                     },
                         onClickSearch = {
                             dialogState.value = true
